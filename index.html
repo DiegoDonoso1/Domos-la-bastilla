@@ -17,8 +17,7 @@
         </div>
         <div class="contenedor-superior">
             <div class="contenedor-titulo">
-                <img src="assets/img/logo.png.png" alt="logo-pagina">
-                <h1 class="titulo-pagina">TU ANILLO DE COMPROMISO</h1>
+                <img class="imagen-contenedor" src="assets/img/logo.png.svg" alt="logo-pagina">
             </div>
             <div class="contenedor-utilidades">
                 <form action="">
@@ -35,14 +34,137 @@
                     <a href="#">ANILLOS</a>
                 </li>
                 <li class="item">NOSOTROS</li>
-                <li class="item">CONTACTANOS</li>
+                <li class="item">CONTÁCTANOS</li>
             </ul>
         </nav>
     </header>
 
+    <!-- banner de la página -->
+    <main>
+        <div class="contenedor-main">
+            <div class="contenido-main">
+                <h2 class="titulo">
+                    TU AVENTURA
+                    <br /> COMIENZA AQUI
+                </h2>
+                <p>Visita nuestra colección</p>
+                <button>Ver colección</button>
+            </div>
+        </div>
+    </main>
+
 
     <!-- sayen -->
     <section>
+        <div class="titulo-categorias">
+            <h2> Anillos por categoría </h2>
+        </div>
+
+        <div class="grid-categorias">
+
+            <div class="categoria">
+                <img src="assets/img/cateplata.png" alt="categoriaplata">
+                <h3>Plata</h3>
+            </div>
+
+            <div class="categoria">
+                <img src="assets/img/cateplataoro.png" alt="categoriaplataoro">
+                <h3>Plata oro</h3>
+            </div>
+
+            <div class="categoria">
+                <img src="assets/img/cateoro.png" alt="categoriaoro">
+                <h3>Oro</h3>
+            </div>
+        </div>
+
+        <section class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/img/pexels-pixabay-265856.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/img/pexels-pixabay-265804.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/img/pexels-leah-kelley-691046 2.png" style="width:100%">
+
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </section>
+
+        <!-- sugerencias -->
+        <div class="titulo-sugerencias">
+            <h2> Nuestras sugerencias </h2>
+        </div>
+
+        <div class="grid-sugerencias">
+
+            <div class="sugerencias">
+                <img src="assets/img/cateplata.png" alt="sugerencia1">
+                <div class="precio-sugerencias">
+                    <h4>Lorem ipsum</h4>
+                    <p>$20.000</p>
+                </div>
+            </div>
+
+            <div class="sugerencias">
+                <img src="assets/img/cateplataoro.png" alt="sugerencia2">
+                <div class="precio-sugerencias">
+                    <h4>Lorem ipsum</h4>
+                    <p>$20.000</p>
+                </div>
+            </div>
+
+            <div class="sugerencias">
+                <img src="assets/img/cateoro.png" alt="sugerencia3">
+                <div class="precio-sugerencias">
+                    <h4>Lorem ipsum</h4>
+                    <p>$20.000</p>
+                </div>
+            </div>
+
+            <div class="sugerencias">
+                <img src="assets/img/cateplataoro.png" alt="sugerencia4">
+                <div class="precio-sugerencias">
+                    <h4>Lorem ipsum</h4>
+                    <p>$20.000</p>
+                </div>
+            </div>
+
+            <div class="sugerencias">
+                <img src="assets/img/cateplata.png" alt="sugerencia5">
+                <div class="precio-sugerencias">
+                    <h4>Lorem ipsum</h4>
+                    <p>$20.000</p>
+                </div>
+            </div>
+
+            <div class="sugerencias">
+                <img src="assets/img/cateplata.png" alt="sugerencia6">
+                <div class="precio-sugerencias">
+                    <h4>Lorem ipsum</h4>
+                    <p>$20.000</p>
+                </div>
+            </div>
+
+        </div>
 
     </section>
 
@@ -58,10 +180,66 @@
 
     <!-- lucas -->
     <footer>
+        <div class="contenedor-footer">
+            <img class="f-logo" src="assets/img/1-removebg-preview 1.svg" alt="logo-tu-anillo-de-compromiso">
+            <ul class="f-listaopt">
+                <li><p  class="f-Subtitulo">Contáctanos</p>
+                    <div class="f-contact-info">
+                    <p> +56 9 3624 8837 </p>
+                    <img class="f-ig-icon" src="assets/img/ig-icon.svg" alt="ig-icon">
+                    <img class="f-fb-icon" src="assets/img/fb.svg" alt="fb-icon">
+                    </div>
+                </li>
+                <li><p class="f-Subtitulo" >Ayuda</p>
+                    <ul class="f-AyudaList">
+                        <li>Guia de Tallas</li>
+                        <li>Como Comprar</li>
+                        <li>Preguntas Frecuentes</li>
+                    </ul>
+                </li>
+                <li><p class="f-Subtitulo">Servicio orientado al cliente</p>
+                    <p class = "f-ServText"> La atencion post-venta es uno de nuestros pilares más importantes,
+                        ya que deseamos poder brindar la mejor atencion.
+                    </p>
+                </li>
+                <li><p class="f-Subtitulo"> Envios a todo Chile </p>
+                    <p class="f-EnviosText">Envíos a todo Chile por pagar a traves de Starken en un máximo
+                        de 48 hrs hábiles.
+                    </p>
+                </li>
+            </ul>
+        </div>
 
     </footer>
 
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 
 </html>

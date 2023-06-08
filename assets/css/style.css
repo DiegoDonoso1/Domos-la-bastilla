@@ -4,9 +4,10 @@
     padding: 0;
 }
 
-.barra-envio {
+.barra-envio{
+
     background-color: #000;
-    color: #fff;
+    color: #F2BDD0;
     text-align: center;
     padding: 0.8rem;
 }
@@ -26,7 +27,10 @@
     grid-column: 2/3;
 }
 
-.buscador {
+
+
+
+.buscador{
     border: 1px solid #841030;
     border-radius: 10px;
     padding: 5px;
@@ -52,8 +56,9 @@
     gap: 50px;
 }
 
-.barra-navegacion {
-    background-color: #FDFAFF;
+
+.barra-navegacion{
+    background-color: #F2E1E6;
 }
 
 .lista {
@@ -96,3 +101,232 @@
     display: flex;
     align-items: center;
 }
+
+.contenedor-main{
+    background-image: url('../img/wedding-g1463dd25f_1280\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenido-main{
+    text-align: start;
+}
+
+.contenido-main h2{
+    color: #841030;
+    font-weight: bold;
+    
+}
+
+.contenido-main p{
+    font-size: 20px;
+    padding: 2px;
+}
+
+.contenido-main button{
+    background-color: #F2BDD0;
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    font-weight: bold;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 20px auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+.mySlides img{
+    height: 550px;
+    width: 550px;
+}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* categorías  */
+.titulo-categorias{
+    text-align: center;
+}
+
+.grid-categorias{
+padding: 30px;
+width: 55%;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-auto-flow: column;
+justify-items: center;
+text-align: center;
+align-items: center;
+margin: auto;
+
+}
+.categoria img{
+    height: 250px;
+    width: 250px;
+    padding-bottom: 15px;
+}
+
+.titulo-sugerencias{
+    text-align: center;
+}
+
+.grid-sugerencias{
+    padding: 40px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-flow: column;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.sugerencias img{
+    height: 230px;
+    width: 230px;
+    padding-bottom: 15px;
+}
+
+.precio-sugerencias{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer Lucas */
+
+footer{
+    background-color: #F2BDD0 ;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: end;
+    width: 80%;
+    margin: auto;
+}
+
+
+.f-listaopt{
+    text-align: end;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 3%;
+    font-size: 125%;
+   /*  font-weight: 600; */
+    gap: 10%;
+}
+
+.f-AyudaList{
+    list-style: none;
+    font-size: 75%;
+    padding-top: 10%; 
+}
+
+.f-AyudaList li{
+    padding: 5% 0;
+}
+
+.f-ServText{
+    padding: 5% 0;
+    font-size: 75%;
+}
+
+.f-EnviosText{
+    font-size: 75%;
+    padding: 5% 0;
+}
+
+.f-Subtitulo{
+    font-weight: bold;
+}
+
+.f-logo{
+    width: 15%;
+    height: auto;
+    padding-top: 2%;
+}
+
+
+.f-contact-info{
+    padding: 20% 0%;
+    
+}
+
+.f-fb-icon{
+    width: 17%;
+    height: auto;
+}
+
