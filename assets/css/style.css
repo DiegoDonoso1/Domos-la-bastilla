@@ -75,3 +75,70 @@
     color: #000;
   }
 
+  /* Footer Lucas */
+
+footer{
+    background-color: #F2BDD0 ;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: end;
+    width: 80%;
+    margin: auto;
+}
+
+
+.f-listaopt{
+    text-align: end;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 3%;
+    font-size: 125%;
+   /*  font-weight: 600; */
+    gap: 10%;
+}
+
+.f-AyudaList{
+    list-style: none;
+    font-size: 75%;
+    padding-top: 10%; 
+}
+
+.f-AyudaList li{
+    padding: 5% 0;
+}
+
+.f-ServText{
+    padding: 5% 0;
+    font-size: 75%;
+}
+
+.f-EnviosText{
+    font-size: 75%;
+    padding: 5% 0;
+}
+
+.f-Subtitulo{
+    font-weight: bold;
+}
+
+.f-logo{
+    width: 15%;
+    height: auto;
+    padding-top: 2%;
+}
+
+
+.f-contact-info{
+    padding: 20% 0%;
+    
+}
+
+.f-fb-icon{
+    width: 17%;
+    height: auto;
+}
+
+
