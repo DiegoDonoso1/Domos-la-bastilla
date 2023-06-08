@@ -1,18 +1,17 @@
-*{
+* {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
-
-.barra-envio{
+.barra-envio {
     background-color: #000;
     color: #fff;
     text-align: center;
     padding: 0.8rem;
 }
 
-.contenedor-superior{
+.contenedor-superior {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-bottom: 1px solid #000;
@@ -20,45 +19,44 @@
     width: 100%;
 }
 
-.contenedor-titulo{
+.contenedor-titulo {
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 2/3;
 }
 
-
-.buscador{
+.buscador {
     border: 1px solid #841030;
     border-radius: 10px;
     padding: 5px;
     background-image: url(../img/prime_search.svg);
     background-repeat: no-repeat;
-    background-position: 95% ;
+    background-position: 95%;
 }
 
-.buscador::placeholder{
+.buscador::placeholder {
     font-weight: bold;
     opacity: 0.5;
     color: #841030;
 }
 
-.buscador:focus{
-    outline: none ;
+.buscador:focus {
+    outline: none;
 }
 
-.contenedor-utilidades{
+.contenedor-utilidades {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
 
-.barra-navegacion{
+.barra-navegacion {
     background-color: #FDFAFF;
 }
 
-.lista{
+.lista {
     display: flex;
     list-style: none;
     gap: 60px;
@@ -67,11 +65,34 @@
     font-weight: bold;
 }
 
-.item a{
+.item a {
     text-decoration: none;
 }
 
-.item a:visited  {
+.item a:visited {
     color: #000;
-  }
+}
 
+.contenedor-mensaje {
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.imagen {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.texto {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
