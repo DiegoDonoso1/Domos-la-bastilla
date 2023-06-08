@@ -1,2 +1,2 @@
-# Domos-la-bastilla
-Proyecto del grupo 6 destinado para emprendimiento Domos la bastilla
+# Tu anillo de compromiso chile
+Proyecto del grupo 6 destinado para emprendimiento Tu anillo de compromiso chile
