@@ -8,6 +8,7 @@ body{
     font-family: 'Roboto' ;
 }
 
+
 .barra-envio{
 
     background-color: #000;
@@ -32,7 +33,7 @@ body{
 }
 
 .contenedor-titulo img{
-    height: 150px;
+    height: 120px;
 }
 
 .buscador{
@@ -100,8 +101,6 @@ body{
 .barra-navegacion ul li a:hover::after {
     transform: scaleX(1);
 }
-
-
 
 .item a {
     text-decoration: none;
