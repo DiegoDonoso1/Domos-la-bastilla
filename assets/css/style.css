@@ -104,6 +104,12 @@ body{
 
 .contenedor-titulo img{
     height: 100px;
+
+}
+
+.contenedor-titulo .button{
+    display: none;
+    background-color: #ffffff
 }
 
 .buscador{
@@ -320,8 +326,7 @@ body{
     padding: 30px;
     width: 55%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-items: center;
     text-align: center;
     align-items: center;
@@ -350,8 +355,8 @@ body{
     padding: 40px;
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-column-gap: 30px;
     justify-items: center;
     text-align: center;
     align-items: center;
@@ -379,12 +384,12 @@ body{
 
 /* section ale */
 .contenedor-mensaje {
-    overflow: auto;
-    display: flex;
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    justify-items: center;
+    margin: auto;
+    
 }
 
 .contenedor-mensaje img {
@@ -464,4 +469,69 @@ footer{
 .f-fb-icon{
     width: 30px;
     height: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .contenedor-superior{
+        display: block;
+    }
+
+    .contenedor-titulo{
+        justify-content: space-between;
+    }
+
+    .contenedor-titulo .button{
+        display: block;
+        cursor: pointer;
+    }
+    .svg{
+        width: 2em;
+        height: 2em;
+        padding: 0 20px;
+    }
+
+    .contenedor-superior .navbar{
+        flex-direction: column;
+        /* display: none; */
+        width: 100%;
+        height: 0;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all .5s ease;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contenedor-superior .navbar.activo{
+        /* display: block; */
+        height: 50vh;
+        pointer-events: auto;
+    }
+
+    .contenedor-superior .lista{
+        flex-flow: column;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedor-main{
+        background-position: center;
+    }
+
+    .grid-categorias{
+        width: auto;
+        padding: 30px 0;
+    }
+
+    .categoria{
+        margin-bottom: 20px;
+    }
+
+    .categoria img{
+        padding: 0px;
+    }
 }
