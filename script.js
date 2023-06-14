@@ -2,7 +2,6 @@ const button = document.querySelector('.button');
 const nav = document.querySelector('.navbar');
 
 button.addEventListener('click', () => {
-	console.log(nav);
 	nav.classList.toggle('activo');
 });
 
