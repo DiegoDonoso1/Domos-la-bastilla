@@ -1,0 +1,525 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto' ;
+    background-color: #fff;
+}
+
+
+.container{
+    background-color: #ffc0cb;
+}
+
+.barra-envio{
+    display: flex;
+    background-color: #ffc0cb;
+    color: #3f3f40;
+    width: 100%;
+    padding: 2px;
+    justify-content: center;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.flex-left{
+    flex: 1;
+}
+
+.flex-right{
+    flex: 1;
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-left li{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.nav-left{
+    justify-content: flex-start;
+}
+
+.social-icons{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link:visited{
+    color: #000;
+}
+
+.phone-icon{
+    height: 16px;
+}
+
+.phone{
+    font-size: 16px;
+    font-weight: normal;
+    color: #3f3f40;
+}
+
+.nav-right{
+    justify-content: flex-end;
+}
+
+.icon-li{
+    margin: 0 .3em;
+}
+
+.icon{
+    height: 20px;
+}
+
+.contenedor-superior {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-bottom: 2px solid #F2F2F0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.contenedor-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+}
+
+.contenedor-titulo img{
+    height: 100px;
+
+}
+
+.contenedor-titulo .button{
+    display: none;
+    background-color: #ffffff
+}
+
+.buscador{
+    border: 1px solid #841030;
+    border-radius: 10px;
+    padding: 7px;
+    width: 250px;
+    background-image: url(../img/prime_search.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+
+.buscador::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: #841030;
+}
+
+.buscador:focus {
+    outline: none;
+}
+
+.barra-navegacion{
+    background-color: #F2E1E6;
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    font-size: 18px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.lista li a {
+    text-decoration: none;
+    position: relative;
+    font-weight: lighter;
+    color: #7d7d7d;
+    font-size: 21px;
+}
+
+.lista li a:hover{
+    color: #841030;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.item a:visited {
+    color: #7d7d7d;
+    font-weight: normal;
+    
+}
+
+.contenedor-utilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    grid-column: 5;
+}
+
+
+/*Comienzo main */
+.container-detalle{
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    justify-content: center;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.image img{
+    height: 500px;
+    width: 500px;
+}
+
+.detalle{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 10px;
+    
+}
+
+.detalle .titulo-anillo{
+    font-size: 26px;
+    font-weight: 100;
+    padding: 10px 0;
+    letter-spacing: 3px;
+}
+
+.detalle .material-anillo{
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.detalle .label-talla{
+    padding: 10px 0;
+}
+
+#talla{
+    width: 30%;
+    padding: 10px;
+    border: 2px solid #F2F2F0;
+}
+
+.detalle .guia-tallas{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.detalle .link-tallas{
+    text-decoration: none;
+    color: grey;
+}
+
+.detalle .stock-anillo{
+    font-weight: 100;
+    padding: 5px 0;
+}
+
+.detalle .stock-anillo span{
+    color: green;
+}
+
+.detalle .precio-anillo{
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.detalle .boton-carrito{
+    width: 40%;
+    background-color: #ffc0cb;
+    color: #fff;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.detalle .envio{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    gap: 5px;
+}
+
+.detalle .envio img{
+    height: 50px;
+    padding: 0 10px 0 0;
+}
+
+.detalle .envio p{
+    font-weight: 100;
+    color: #3F3F3F;
+}
+
+.detalle .envio span{
+    color: green;
+}
+
+.separacion{
+    text-align: center;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.separacion h3{
+    font-size: 22px;
+    font-weight: 100;
+    padding: 40px;
+    line-height: 5px;
+    letter-spacing: 2px;
+}
+
+hr{
+    border:1px solid #F2F2F0;
+}
+
+.descripcion{
+    font-size: 18px;
+    font-weight: 300;
+    margin: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    width: 80%;
+    color: grey;
+    letter-spacing: .8px;
+    text-align: start;
+}
+
+/*Comienzo de section sugerencias */
+
+.contenedor-section{
+    height: 600px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    row-gap: 40px;
+}
+
+.container-sugerencia{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.titulo-sugerencia{
+    font-weight: 100;
+    font-size: 22px;
+    text-align: center;
+    color: #3F3F3F;
+    margin-top: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    /* background-color: #fff;
+    border: 2px solid #ffc0cb; */
+   /*  box-shadow: 2px 2px 4px 4px rgba(130,130,130,0.75); */
+}
+
+.card img{
+    height: 250px;
+    width: 250px;
+   /*  border-radius: 5px; */
+}
+
+.card  .titulo-anillo{
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    padding: 5px 0px;
+}
+
+.card .categoria-anillo{
+    color: #7d7d7d;
+    font-weight: 200;
+    padding: 2px 0px;
+}
+
+.card .precio-anillo{
+    font-size: 18px;
+    font-weight: 200;
+    color: #000;
+    padding: 2px 0px;
+}
+
+
+
+/* Comienzo footer */
+footer{
+    background-color: #ffc0cb ;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: end;
+    width: 80%;
+    margin: auto;
+}
+
+
+.f-listaopt{
+    text-align: end;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 3%;
+    font-size: 125%;
+   /*  font-weight: 600; */
+    gap: 10%;
+}
+
+.f-AyudaList{
+    list-style: none;
+    font-size: 75%;
+    padding-top: 10%; 
+}
+
+.f-AyudaList li{
+    padding: 2% 0;
+}
+
+.f-ServText{
+    padding: 5% 0;
+    font-size: 75%;
+}
+
+.f-EnviosText{
+    font-size: 75%;
+    padding: 15% 0;
+}
+
+.f-Subtitulo{
+    font-weight: bold;
+}
+
+.f-logo{
+    width: 15%;
+    height: auto;
+    padding-top: 2%;
+}
+
+
+.f-contact-info{
+    padding: 10% 0%;
+    
+}
+
+.f-fb-icon{
+    width: 30px;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .barra-superior{
+        width: auto;
+    }
+
+    .contenedor-superior{
+        display: block;
+    }
+
+    .contenedor-titulo{
+        justify-content: space-between;
+    }
+
+    .contenedor-titulo .button{
+        display: block;
+        cursor: pointer;
+    }
+    .svg{
+        width: 2em;
+        height: 2em;
+        padding: 0 20px;
+    }
+
+    .contenedor-superior .navbar{
+        flex-direction: column;
+        /* display: none; */
+        width: 100%;
+        height: 0;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all .5s ease;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contenedor-superior .navbar.activo{
+        /* display: block; */
+        height: 50vh;
+        pointer-events: auto;
+    }
+
+    .contenedor-superior .lista{
+        flex-flow: column;
+    }
+
+    .contenedor-utilidades{
+        margin: 10px;
+    }
+
+    .container-detalle{
+        flex-direction: row;
+        gap: 10px;
+        margin: 30px auto;
+    }
+    .image img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .separacion{
+        margin: auto;
+    }
+
+    .descripcion{
+        margin-bottom: 30px;
+    }
+
+    .contenedor-section{
+        height: auto;
+    }
+
+    .container-sugerencia{
+        flex-direction: column;
+    }
+}
