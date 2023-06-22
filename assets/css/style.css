@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Roboto' ;
-    background-color: #FBFBFB;
+    background-color: #fff;
 }
 
 
@@ -156,34 +156,12 @@ body{
 }
 
 .lista li a:hover{
-    font-weight: bold;
     color: #841030;
-}
-
-.lista li a::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: #841030;
-    transform: scaleX(0);
-}
-
-.lista ul li a:hover::after {
-    transform: scaleX(1);
 }
 
 
 .item a {
     text-decoration: none;
-}
-
-.item a:visited {
-    color: #7d7d7d;
-    font-weight: normal;
-    
 }
 
 .contenedor-utilidades {
@@ -193,7 +171,6 @@ body{
     gap: 30px;
     grid-column: 5;
 }
-
 
 .contenedor-main{
     background-image: url('../img/wedding-g1463dd25f_1280\ 1.png');
