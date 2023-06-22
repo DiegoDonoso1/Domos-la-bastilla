@@ -446,10 +446,6 @@ footer{
 
 @media only screen and (max-width: 480px) {
 
-    .barra-superior{
-        width: auto;
-    }
-
     .contenedor-superior{
         display: block;
     }
@@ -491,35 +487,5 @@ footer{
 
     .contenedor-superior .lista{
         flex-flow: column;
-    }
-
-    .contenedor-utilidades{
-        margin: 10px;
-    }
-
-    .container-detalle{
-        flex-direction: row;
-        gap: 10px;
-        margin: 30px auto;
-    }
-    .image img{
-        height: 300px;
-        width: 300px;
-    }
-
-    .separacion{
-        margin: auto;
-    }
-
-    .descripcion{
-        margin-bottom: 30px;
-    }
-
-    .contenedor-section{
-        height: auto;
-    }
-
-    .container-sugerencia{
-        flex-direction: column;
     }
 }

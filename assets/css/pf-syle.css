@@ -606,8 +606,6 @@ footer{
 }
 
 @media only screen and (max-width: 600px) {
-
-    
     .contenedor-footer{
         display: flex;
         flex-direction: column;
@@ -637,8 +635,6 @@ footer{
         padding-left: 2.5%;
     }
 
-   
-    
 
 }
 
