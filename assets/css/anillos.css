@@ -481,67 +481,114 @@ body{
 
 /* Comienzo footer */
 footer{
-    background-color: #ffc0cb ;
-}
-
-.contenedor-footer{
-    display: flex;
-    justify-content: end;
-    width: 80%;
-    margin: auto;
-}
-
-
-.f-listaopt{
-    text-align: end;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-top: 3%;
-    font-size: 125%;
-   /*  font-weight: 600; */
-    gap: 10%;
-}
-
-.f-AyudaList{
-    list-style: none;
-    font-size: 75%;
-    padding-top: 10%; 
-}
-
-.f-AyudaList li{
-    padding: 2% 0;
-}
-
-.f-ServText{
-    padding: 5% 0;
-    font-size: 75%;
-}
-
-.f-EnviosText{
-    font-size: 75%;
-    padding: 15% 0;
-}
-
-.f-Subtitulo{
-    font-weight: bold;
-}
-
-.f-logo{
-    width: 15%;
-    height: auto;
-    padding-top: 2%;
-}
-
-
-.f-contact-info{
-    padding: 10% 0%;
+    background-color: #F2BDD0 ;
     
 }
 
-.f-fb-icon{
-    width: 30px;
-    height: auto;
+.contenedor-footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    padding-top: 3%;
+    gap: 1%;
+    padding-right: 5%;
+}
+
+.f-logo{
+    padding-left: 15%;
+    width: 60%;
+    
+}
+
+
+.f-contacto{
+    grid-column: 2;
+}
+
+
+.f-ph-logo{
+    width: 8%;
+    padding-left: 3%;
+}
+.f-telefono{
+    padding-left: 3%;
+    
+}
+.f-ig-logo{
+    width: 8%;
+    padding-left: 3%;
+    align-items: center;
+}
+
+.f-content-text{
+    padding-bottom: 3%;
+}
+
+.f-fb-logo{
+    width: 8.9%;
+    padding-left: 2.5%;
+}
+
+.f-ayuda{
+    grid-column: 3;
+}
+
+.f-a:link , .f-a:visited , .f-a:hover , .f-a:active {
+    text-decoration: none;
+    color:#000;
+}
+
+.f-servclient{
+    grid-column: 4;
+}
+
+.f-envios{
+    grid-column: 5;
+}
+
+
+/* Propiedades acordeones footer */
+
+.f-input-acord{
+    display: none;
+}
+
+.f-label{
+    display: block;
+    padding: 8px 15px;
+    cursor: pointer;
+    background: #F2C9D4;
+    border-radius: 3px;
+    transition: ease 1s;
+    position: relative;
+    font-weight: bold;
+    color: #2c2b2b;
+    
+}
+
+.f-label:hover{
+    background: #fde4e9;
+}
+
+.f-content{
+    background: #fcf1f3;
+    padding: 1% 1%;
+    border: 1px solid #fde4e9;
+    margin: 0 0 1px 0;
+    border-radius: 3px;
+    
+}
+
+/* .f-input-acord+.f-label+.f-content{
+    display: none;
+} |- Esta propiedad activa la funcion de los acordeones */
+
+.f-input-acord:checked+.f-label+.f-content{
+    display:block;
+}
+
+.f-content, li{
+    list-style-type: none;
 }
 
 
@@ -632,5 +679,52 @@ footer{
 
     .container-paginas{
         width: auto;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .f-logo{
+        display: flex;
+        max-width: 60% ;
+        padding-left: 18%;
+    }
+
+    .f-ph-logo{
+        width: 10%;
+    }
+    .f-telefono{
+        padding-left: 3%;
+        
+        
+    }
+    .f-ig-logo{
+        width: 10%;
+        padding-left: 3%;
+    }
+    
+    .f-fb-logo{
+        width: 10.9%;
+        padding-left: 2.5%;
+    }
+
+    .f-input-acord+.f-label+.f-content{
+        display: none;
+        }
+    
+        .f-label:hover{
+        background: none;
+        }
+        .f-label:active{
+        background-color: #841030;
+        }
+    .contenedor-footer{
+        gap: 0%;
+        padding-right: 0%;
+
     }
 }
