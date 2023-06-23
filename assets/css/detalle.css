@@ -19,7 +19,6 @@ body{
     background-color: #ffc0cb;
     color: #3f3f40;
     width: 100%;
-    padding: 2px;
     justify-content: center;
     max-width: 1250px;
     margin: auto;
@@ -173,7 +172,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     grid-column: 5;
 }
 
@@ -188,9 +187,19 @@ body{
     flex-wrap: wrap;
 }
 
+.image{
+    overflow: hidden;
+    height: 500px;
+}
+
 .image img{
     height: 500px;
     width: 500px;
+    transition: all .5s ease;
+}
+
+.image img:hover{
+    transform: scale(1.4);
 }
 
 .detalle{
@@ -259,6 +268,10 @@ body{
     font-weight: 600;
 }
 
+.detalle .boton-carrito:hover{
+    background-color: #841030;
+}
+
 .detalle .envio{
     display: flex;
     align-items: center;
@@ -296,6 +309,8 @@ body{
 
 hr{
     border:1px solid #F2F2F0;
+    width: 80%;
+    margin: auto;
 }
 
 .descripcion{
@@ -339,34 +354,89 @@ hr{
 }
 
 .card{
+    position: relative;
+    display: inline-block;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    cursor: pointer;
-    /* background-color: #fff;
-    border: 2px solid #ffc0cb; */
-   /*  box-shadow: 2px 2px 4px 4px rgba(130,130,130,0.75); */
+    margin: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card img{
-    height: 250px;
-    width: 250px;
-   /*  border-radius: 5px; */
+    height: 260px;
+    width: 260px;
 }
 
-.card  .titulo-anillo{
+.card a{
+    text-decoration: none;
+}
+
+.card .mesage{
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 93%;
+    text-align: center;
+    background-color: #ffc0cb;
+    color: #000;
+    font-weight: 400;
+    padding: 5px 10px;
+    font-size: 16px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card .cart{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.card .cart-span::before{
+    content: ' ';
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    background-image: url(../img/ph_shopping-cart-simple.svg);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+.card .cart:hover{
+    background-color: #7d7d7d;
+    border-radius: 50% ;
+}
+
+.card:hover .mesage{
+    visibility: visible;
+    opacity: .8;
+}
+
+
+.card .titulo-anillo{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     color: #000000;
-    padding: 5px 0px;
+    padding: 1px 0px;
+    letter-spacing: 1px;
 }
 
 .card .categoria-anillo{
     color: #7d7d7d;
     font-weight: 200;
     padding: 2px 0px;
+    font-size: 16px;
 }
 
 .card .precio-anillo{
@@ -374,8 +444,14 @@ hr{
     font-weight: 200;
     color: #000;
     padding: 2px 0px;
+    letter-spacing: 1px;
 }
 
+.card .view-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+}
 
 
 /* Comienzo footer */
@@ -534,6 +610,32 @@ footer{
 
     .contenedor-superior .lista{
         flex-flow: column;
+    }
+
+    .contenedor-superior .contenedor-utilidades{
+        padding: 10px 0;
+    }
+
+    .container-detalle{
+        gap: 10px;
+    }
+
+    .image{
+        height: auto;
+    }
+
+    .image img{
+        height: 300px;
+        width: 300px;
+    }
+
+
+    .contenedor-section{
+        height: auto;
+    }
+
+    .container-sugerencia{
+        flex-direction: column;
     }
 
     /* Footer */
