@@ -19,7 +19,6 @@ body{
     background-color: #ffc0cb;
     color: #3f3f40;
     width: 100%;
-    padding: 2px;
     justify-content: center;
     max-width: 1250px;
     margin: auto;
@@ -173,7 +172,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     grid-column: 5;
 }
 
@@ -644,6 +643,7 @@ footer{
 
     .contenedor-utilidades{
         margin: 10px;
+        padding: 10px 0;
     }
 
     .container-detalle{
@@ -680,6 +680,8 @@ footer{
     .container-paginas{
         width: auto;
     }
+
+    
 
     /* Footer */
 
